@@ -5,6 +5,7 @@ fourTwoOneCountMax = 3
 inf = math.inf
 ## This value can be any floating point number, ideally between 0 and 2. 
 y = 1.0000084
+# valed through 1.3222491729511548e+16
 z = 0
 
 def main():
