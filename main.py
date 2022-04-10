@@ -2,11 +2,12 @@ import math
 
 fourTwoOneCount = 0
 inf = math.inf
+y = 1.02
 
 def main():
 	v = 1
-	while v <= (inf - (v*1.12645646456436)):
-		v *= 1.000000000006
+	while v <= (inf - (v*y)):
+		v *= y
 		collatz(v)
 
 def collatz(inputVal):
