@@ -4,16 +4,19 @@ fourTwoOneCount = 0
 fourTwoOneCountMax = 3
 inf = math.inf
 ## This value can be any floating point number, ideally between 0 and 2. 
-y = 1.000000000000007
+y = 1.0000084
+z = 0
 
 def main():
 	v = 1
 	# This checks to make sure that v times your multiplier (y) is within range of inifinty
 	while v <= (inf - (v*y)):
+		z = v
 		v *= y
-		collatz(v)
+		if v != z:
+			collatz(v)
 
-def collatz(inputVal):
+def collatz(inputVal):	
 	print(f"Current Input: {inputVal}")
 	fuckVal = True
 	fourTwoOneCount = 0
