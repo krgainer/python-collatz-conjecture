@@ -1,10 +1,10 @@
 import math
 
-fourTwoOneCount = 0
+## The amount of times the 4 - 2 - 1 loop is allowed to repeat before moving to the next number.
 fourTwoOneCountMax = 3
-## This value can be any floating point number, ideally between 0 and 2. 
-y = 1.0000084
-# valed through 1.3222491729511548e+16
+## This value can be any floating point number, ideally between 0 and 2. MUST BE A FLOAT
+y = 1.
+# validateded through 1.3222491729511548e+16
 z = 0
 
 def main():
@@ -18,10 +18,10 @@ def main():
 
 def collatz(inputVal):
 	initialValue = inputVal
-	fuckVal = True
+	GameRunning = True
 	fourTwoOneCount = 0
 	totalCount = 0
-	while fuckVal:
+	while GameRunning:
 		## This is the collatz conjecture "game logic".bool()
 		## If inputVal is an even number, divide it by 2, otherwise multiply it by 3 and add one. 
 		inputVal = inputVal / 2 if inputVal % 2 == 0 else inputVal * 3 + 1
@@ -30,7 +30,7 @@ def collatz(inputVal):
 		if inputVal == 4 and fourTwoOneCount <= fourTwoOneCountMax:
 			fourTwoOneCount += 1
 		if fourTwoOneCount == fourTwoOneCountMax+1:
-			fuckVal = False
+			GameRunning = False
 		else:
 			totalCount += 1
 # This outputs the number of times the collatz conjecture was run before hitting a [4, 2, 1, 4] loop. 
