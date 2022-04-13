@@ -16,8 +16,6 @@ def plusOneFunction():
 		if e < 10000000000:
 			break
 
-## White a function that inciments by 1 but reallu fast.
-
 def main():
 	start_time = time.time()
 	itertoolsFunction()
