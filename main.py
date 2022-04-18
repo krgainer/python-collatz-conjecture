@@ -42,6 +42,7 @@ def collatz(n):
 
 
 def main():
+	# You can chose to either run intNum() or floatNum(), but not both (because, if the conjecture is true, the program will never stop :P)
 	intNum()
 
 
